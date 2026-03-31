@@ -19,7 +19,7 @@ def main():
 
     # --- 相对路径配置 ---
     current_dir = Path(__file__).parent.absolute()
-    base_dir = current_dir.parent / "data" / "raw" / str(start_year)
+    base_dir = current_dir.parent / "data" / str(start_year)
     roi_path = current_dir.parent / "data" / "range" / "Baikal_Lake_Boundary.shp"
     
     # 修正：写入到 result 文件夹
