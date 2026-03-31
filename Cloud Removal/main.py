@@ -18,7 +18,7 @@ def run():
         print("❌ 输入年份无效。")
         return
         
-    base_dir = Path(f"./data/{year}") # 建议归拢到 data 目录下
+    base_dir = Path(f"./data/{year}")
     roi_path = Path("./data/range/Baikal_Lake_Boundary.shp")
     output_dir = Path(f"./result/{year}")
     output_dir.mkdir(parents=True, exist_ok=True)
