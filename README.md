@@ -27,29 +27,15 @@
 ```text
 baikal-ice-phenology/
 ├── Cloud Removal/                 # [Step 1] 时空去云与影像重构模块
-├── Phenology Extration/           # [Step 2] 宏观时间序列物候提取模块
+├── Phenology Extra tion/          # [Step 2] 宏观时间序列物候提取模块
 ├── Phenology Distribution Mapping/# [Step 3] 像素级空间物候制图模块
 ├── Validation & Assessment/       # [Step 4] 云量统计与 SAR 真值精度验证模块
 └── data/                          # 统一的数据存放中心
     ├── 2024/                      # 原始 MOD/MYD 影像存放区 (按年份建文件夹)
     ├── range/                     # 湖泊边界 Shapefile 掩膜
-    ├── ground_truth/              # Sentinel-1 SAR 真值数据集及 GEE 脚本
-    └── result/                    # (程序自动生成) 去云影像、统计 CSV 与空间分布 TIF
-🛠️ 环境配置
-处理遥感影像，最头疼的就是 GDAL 和 PROJ 的底层环境冲突。强烈推荐使用 Conda 进行隔离配置：
+    └── ground_truth/              # Sentinel-1 SAR 真值数据集及 GEE 脚本
 
 
-# 1. 创建并激活虚拟环境
-conda create -n ice_phenology python=3.9
-conda activate ice_phenology
-
-# 2. 安装核心地理空间库 (务必用 conda-forge 解决底层 C 库依赖)
-conda install -c conda-forge gdal rasterio geopandas
-
-# 3. 安装数据处理与可视化常规库
-pip install pandas numpy scipy scikit-learn matplotlib seaborn
-🚀 处理流程指南 (Processing Pipeline)
-请按照以下 1~4 的顺序执行脚本，跑通完整工作流。
 
 Step 0: 准备原始数据
 进入 data/2024/ (或其他年份文件夹)，阅读里面的 readme.txt。
