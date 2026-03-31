@@ -34,7 +34,7 @@ MODIS-Cloud-Removal-for-Ice-Phenology-Extration/
     ├── 2024/                      # 原始 MOD/MYD 影像存放区 (按年份建文件夹)
     ├── range/                     # 湖泊边界 Shapefile 掩膜
     └── ground_truth/              # Sentinel-1 SAR 真值数据集及 GEE 脚本
-
+```text
 
 
 Step 0: 准备原始数据
