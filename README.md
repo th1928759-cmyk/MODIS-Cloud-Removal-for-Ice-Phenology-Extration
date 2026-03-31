@@ -1,6 +1,4 @@
-# MODIS-Cloud-Removal-for-Ice-Phenology-Extration
-# 🧊 Lake Baikal Ice Phenology Extraction & Cloud Removal Pipeline
-> 基于多源遥感数据的贝加尔湖冰情物候全自动提取与时空分析框架
+# 🧊 基于MODIS去云算法的贝加尔湖湖冰物候提取
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![GDAL](https://img.shields.io/badge/GDAL-3.0%2B-green)
@@ -40,7 +38,7 @@ baikal-ice-phenology/
 🛠️ 环境配置
 处理遥感影像，最头疼的就是 GDAL 和 PROJ 的底层环境冲突。强烈推荐使用 Conda 进行隔离配置：
 
-Bash
+
 # 1. 创建并激活虚拟环境
 conda create -n ice_phenology python=3.9
 conda activate ice_phenology
